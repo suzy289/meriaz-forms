@@ -3,8 +3,6 @@ import Hero from '@components/Hero'
 import ServicesSection from '@components/ServicesSection'
 import ValueProposition from '@components/ValueProposition'
 import ProcessSteps from '@components/ProcessSteps'
-import References from '@components/References'
-import CTASection from '@components/CTASection'
 import Footer from '@components/Footer'
 import { techs } from '@lib/constants'
 
@@ -27,8 +25,6 @@ export default function Page() {
         </div>
       </section>
       <ProcessSteps />
-      <References />
-      <CTASection />
       <Footer />
     </main>
   )
