@@ -1,9 +1,13 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <img src="/Copie de Fichier 5.png" alt="Logo Meriaz" className="h-8 w-8 object-contain mb-3" />
+          <Link href="/" className="inline-block">
+            <img src="/Copie de Fichier 5.png" alt="Logo Meriaz" className="h-8 w-8 object-contain mb-3" />
+          </Link>
           <div className="text-slate-700">Votre partenaire technologique</div>
         </div>
         <div className="text-slate-700">
@@ -19,8 +23,8 @@ export default function Footer() {
         </div>
         <div className="text-slate-700">
           <div className="font-semibold mb-3">Contact</div>
-          <div className="text-sm">WhatsApp: +237 620 275 758</div>
-          <a className="text-primary text-sm" href="https://wa.me/237620275758" target="_blank" rel="noopener noreferrer">
+          <div className="text-sm mb-2">WhatsApp: +237 620 275 758</div>
+          <a className="btn-primary inline-flex" href="https://wa.me/237620275758" target="_blank" rel="noopener noreferrer">
             Discuter sur WhatsApp
           </a>
         </div>

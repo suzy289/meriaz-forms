@@ -78,10 +78,12 @@ export default function ServicesSection() {
 
                 <div className="h-[240px] rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center mb-8 relative overflow-hidden group">
                   {activeService.imagePlaceholder.startsWith('/') ? (
-                    <div className="text-slate-400 flex flex-col items-center gap-2">
-                       <span className="text-sm font-medium">Image: {activeService.imagePlaceholder}</span>
-                       <span className="text-xs">600 × 400</span>
-                    </div>
+                    <Image
+                      src={activeService.imagePlaceholder}
+                      alt={activeService.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   ) : (
                     <div className="text-slate-400">600 × 400</div>
                   )}
